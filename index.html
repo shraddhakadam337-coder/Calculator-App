@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoMaterial Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>🚗 AutoMaterial Guide</h1>
+    <p>Smart Material Recommendation for Automotive Components</p>
+  </header>
+
+  <section class="selector">
+    <h2>Select a Vehicle Component</h2>
+    <select id="componentSelect">
+      <option value="" disabled selected>-- Choose Component --</option>
+      <option value="brake">Brake Disc</option>
+      <option value="piston">Engine Piston</option>
+      <option value="frame">Vehicle/Bicycle Frame</option>
+      <option value="frame">WindMill Blades</option>
+    </select>
+    <button onclick="recommendMaterial()">Recommend Material</button>
+  </section>
+
+  <section id="result" class="hidden">   
+    <h2 id="materialTitle"></h2>
+    <p id="materialDesc"></p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Material</th>
+          <th>Strength</th>
+          <th>Weight</th>
+          <th>Heat Resistance</th>
+          <th>Price (₹)</th>
+        </tr>
+      </thead>
+      <tbody id="comparisonTable"></tbody>
+    </table>
+
+    <div id="suggestions"></div>
+
+    <h3>Buy From:</h3>
+    <ul id="buyLinks"></ul>
+  </section>
+
+  <footer>
+    <p>Made by Shraddha Kadam | B.Tech AI & ML | 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
